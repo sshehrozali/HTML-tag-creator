@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+    <title>Fun with JavaScript!</title>
+</head>
+<body>
+    <div class="outerDiv">
+        <p id="title">What do you want to <span>create?</span></p>
+        <div class="innerDiv">
+            <div class="typeSelector">
+                <button class="selector" onclick="showHide('heading')">Heading</button>
+                <div id="heading">
+                    <input type="text" placeholder="Enter Number">
+                    <button onclick="createfields(0)">Create!</button>
+                </div>
+            </div>
+            <div class="typeSelector">
+                <button class="selector" onclick="showHide('span')">Span</button>
+                <div id="span">
+                    <input type="text" placeholder="Enter Number">
+                    <button onclick="createfields(1)">Create!</button>
+                </div>
+            </div>
+            <div class="typeSelector">
+                <button class="selector" onclick="showHide('paragraph')">Paragraph</button>
+                <div id="paragraph">
+                    <input type="text" placeholder="Enter Number">
+                    <button onclick="createfields(2)">Create!</button>
+                </div>
+            </div>
+            <div class="typeSelector">
+                <button class="selector" onclick="showHide('link')">Link</button>
+                <div id="link">
+                    <input type="text" placeholder="Enter Number">
+                    <button onclick="createfields(3)">Create!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="scriptElements"></div>
+    <footer>
+        <span>Made with ❤️ by <a href="https://github.com/sshehrozali" alt="github username: sshehrozali"> Shehroz Ali</a></span>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
